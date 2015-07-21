@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+        body{
+            width: 100%;
+        }
+        header {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            background: #049cbf;
+        }
+
+        header  h1{
+            width: 300px;
+            height: auto;
+            display: flex;
+            font-family: 'Merienda One', cursive;
+            font-size: 30px;
+            color: #102fbf;
+        }
+        header h3{
+            width: 120px;
+            display: flex;
+            font-style: italic;
+        }
+        form{
+            display: flex;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        input{
+            display: flex;
+            width: 350px;
+            height: 40px;
+            border: 4px solid rosybrown;
+            border-radius: 5px;
+        }
+        #submit {
+            border: 4px solid rosybrown;
+            border-radius: 5px;
+            width: 80px;
+            height: 40px;
+        }
+        section{
+            margin: 0 auto;
+            width: 100%;
+            min-height: 600px;
+            background: burlywood;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        footer {
+            display: flex;
+            height: 80px;
+            width: 100%;
+            background-color: gray;
+            margin-right: 0;
+            margin-bottom: 0;
+            position: fixed;
+        }
+        footer ul {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 30px;
+        }
+        footer ul li {
+            display: flex;
+        }
+        footer ul li a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Tweet it!</h1>
+    <h3>{{.Name}}</h3>
+    <h1>{{.Email}}</h1>
+
+</header>
+<section>
+<form method="post">
+    <input type="text" name="name" placeholder="First Name + Last Name"/>
+    <input type="text" name="email" placeholder="enter your email"/>
+    <input id="submit" type="submit" name="login"/>
+</form>
+
+</section>
+<footer>
+    <ul>
+        <li>
+            <a href="#">Home</a></li>
+        <li>
+            <a href="tweets.gohtml"> Tweets</a>
+        </li>
+        <li><a href="#">Create Account</a></li>
+    </ul>
+</footer>
+</body>
+</html>
